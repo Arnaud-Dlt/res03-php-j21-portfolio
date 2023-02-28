@@ -19,8 +19,9 @@ class DefaultController extends AbstractController
      * @Route("/a-propos", name="about")
      */
 
-     public function about(): Response
-     {
+    public function about(): Response
+    {
         return $this->render('about.html.twig', []);
-     }
+    }
+    
 }
