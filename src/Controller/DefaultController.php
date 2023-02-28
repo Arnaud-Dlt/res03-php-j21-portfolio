@@ -23,5 +23,15 @@ class DefaultController extends AbstractController
     {
         return $this->render('about.html.twig', []);
     }
+
+     /**
+     * @Route("/mes-projets", name="mes-projets")
+     */
+
+     public function projets(): Response
+     {
+         return $this->render('projets.html.twig', []);
+     }
+     
     
 }
